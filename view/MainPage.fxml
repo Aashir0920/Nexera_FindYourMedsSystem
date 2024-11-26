@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to bottom, #E3F2FD, #BBDEFB);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageController">
+   <children>
+      <!-- Title Label -->
+      <Label layoutX="80.0" layoutY="20.0" prefHeight="34.0" prefWidth="200.0" text="Find your Meds" textAlignment="CENTER" style="-fx-text-fill: #0D47A1; -fx-font-weight: bold;">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow radius="3" offsetX="1" offsetY="1" color="#90CAF9"/>
+         </effect>
+      </Label>
+
+      <!-- Customer Button -->
+      <Button layoutX="80.0" layoutY="80.0" onAction="#goToCustomerLogin" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow radius="3" offsetX="1" offsetY="2" color="#A5D6A7"/>
+         </effect>
+         <text>Customer</text>
+      </Button>
+
+      <!-- Drugstore Owner Button -->
+      <Button layoutX="80.0" layoutY="150.0" onAction="#goToDrugstoreOwnerLogin" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow radius="3" offsetX="1" offsetY="2" color="#BBDEFB"/>
+         </effect>
+         <text>Drugstore Owner</text>
+      </Button>
+
+      <!-- Admin Button -->
+      <Button layoutX="80.0" layoutY="220.0" onAction="#goToAdminLogin" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #FF5722; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow radius="3" offsetX="1" offsetY="2" color="#FFAB91"/>
+         </effect>
+         <text>Admin</text>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="326.0" prefWidth="486.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FeedbackController">
+   <children>
+      <!-- Pharmacy Name Input -->
+      <TextField fx:id="pharmacyNameField" layoutX="133.0" layoutY="15.0" prefWidth="300.0" promptText="Enter Pharmacy Name"/>
+      
+      <!-- Feedback Text Area -->
+      <TextArea fx:id="feedbackArea" layoutX="93.0" layoutY="55.0" prefHeight="200.0" prefWidth="300.0" promptText="Enter your feedback"/>
+      
+      <!-- Submit Feedback Button -->
+      <Button layoutX="189.0" layoutY="274.0" onAction="#submitFeedback" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Submit Feedback" />
+      
+      <!-- Back Button -->
+      <Button layoutX="14.0" layoutY="14.0" onAction="#goBack" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

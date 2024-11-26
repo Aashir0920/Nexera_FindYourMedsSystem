@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DrugstoreManagePharmacyController">
+   <children>
+      <!-- Pharmacy Table -->
+      <TableView fx:id="pharmacyTable" layoutX="50.0" layoutY="50.0" prefHeight="250.0" prefWidth="500.0" />
+
+      <!-- Buttons -->
+      <Button fx:id="addPharmacyButton" layoutX="50.0" layoutY="320.0" onAction="#addPharmacy" text="Add Pharmacy" />
+      <Button fx:id="deletePharmacyButton" layoutX="150.0" layoutY="320.0" onAction="#deletePharmacy" text="Delete Pharmacy" />
+      <Button layoutX="50.0" layoutY="360.0" onAction="#goBack" text="Back" />
+   </children>
+</AnchorPane>

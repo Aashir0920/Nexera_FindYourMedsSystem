@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DrugstoreOrdersPageController">
+   <children>
+      <ListView fx:id="ordersListView" layoutX="50.0" layoutY="50.0" prefHeight="250.0" prefWidth="500.0" />
+      <Button layoutX="50.0" layoutY="320.0" onAction="#approveOrder" prefWidth="150.0" text="Approve Order" />
+      <Button layoutX="450.0" layoutY="320.0" onAction="#goBackToDashboard" prefWidth="100.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DrugstoreFeedbackController">
+   <children>
+      <ListView fx:id="feedbackListView" layoutX="50.0" layoutY="50.0" prefHeight="250.0" prefWidth="500.0" />
+      <Label layoutX="50.0" layoutY="20.0" text="Feedback for Your Pharmacy:" />
+      <Button layoutX="450.0" layoutY="350.0" onAction="#goBackToDashboard" prefWidth="100.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #e8f5e9);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardController">
+   <children>
+      <!-- Title Label -->
+      <Label layoutX="100.0" layoutY="20.0" text="Admin Dashboard" textAlignment="CENTER" style="-fx-text-fill: #37474f;">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      
+      <!-- View Medicines Button -->
+      <Button layoutX="90.0" layoutY="80.0" onAction="#goToMedicineManagement" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;">
+         View Medicines
+      </Button>
+      
+      <!-- View Pharmacies Button -->
+      <Button layoutX="90.0" layoutY="140.0" onAction="#goToPharmacyManagement" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;">
+         View Pharmacies
+      </Button>
+      
+      <!-- View Orders Button -->
+      <Button layoutX="90.0" layoutY="200.0" onAction="#goToOrderManagement" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #FFC107; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-background-radius: 20;">
+         View Orders
+      </Button>
+      
+      <!-- View Feedback Button -->
+      <Button layoutX="90.0" layoutY="260.0" onAction="#goToFeedbackView" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #9C27B0; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;">
+         View Feedback
+      </Button>
+      
+      <!-- Approve Drugstore Owner Button -->
+      <Button layoutX="90.0" layoutY="320.0" onAction="#goToApproveDrugstoreOwner" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 20;">
+         Approve Drugstore Owner
+      </Button>
+      
+      <!-- Logout Button -->
+      <Button layoutX="300.0" layoutY="40.0" onAction="#logout" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-font-size: 12px; -fx-background-radius: 10;">
+         Logout
+      </Button>
+   </children>
+</AnchorPane>
